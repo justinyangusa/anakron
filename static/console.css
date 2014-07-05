@@ -1,0 +1,67 @@
+body {
+	background-color: #252928;
+	font-family: Menlo, Monaco, monospace;
+	color: white;
+	font-size: 16px;
+	padding-top: 50px;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 50px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#console {
+	width: 100%;
+	margin-bottom: 20px;
+}
+#stdin, #nick {
+	border-style: none;
+	font-size: 16px;
+	font-family: Menlo, Monaco, monospace;
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+	padding: 10px;
+	border-radius: 10px;
+	width: 100%;
+	margin-top: 20px;
+}
+#stdin:focus, #nick:focus {
+	outline: none;
+}
+
+#stdin[disabled] {
+	background-color: rgba(255,255,255,0.3);
+}
+
+.log {
+	margin-top: 5px;
+}
+
+.error {
+	color: #FF4E4E;
+}
+
+.response {
+	color: #DBA064;
+}
+
+.chat {
+	color: #4FADC9;
+}
+
+#main {
+	display: none;
+}
+
+#login {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nick {
+	text-align: center;
+}

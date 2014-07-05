@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="favicon.png" type="image/png"/>
+		<link rel="shortcut icon" href="favicon.png" type="image/png"/>
+		<link rel="image_src" href="favicon.png"/>
+		<link rel="stylesheet" type="text/css" href="console.css"/>
+		<meta property='og:image' content='favicon.png'/>
+		<meta name="description" content="Realtime online text based adventure"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<script src="client.js"></script>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://blockchain.info//Resources/wallet/pay-now-button.js"></script>
+
+		<title>Anakron</title>
+	</head>
+	<body>
+		<div id="login">
+			Please choose a nickname of 6 or more letters, numbers, or underscores: <br/>
+			<input type="text" id="nick" autocapitalize="off" autocomplete="off" autofocus/>
+		</div>
+		<div id="main">
+		<div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
+		     data-address="18QuF5p7ZW6PG83fBkd7h8xZcdDFbtg3hE"
+		     data-shared="false">
+		    <div class="blockchain stage-begin">
+		        <img src="https://blockchain.info//Resources/buttons/donate_64.png"/>
+		    </div>
+		    <div class="blockchain stage-loading" style="text-align:center">
+		        <img src="https://blockchain.info//Resources/loading-large.gif"/>
+		    </div>
+		    <div class="blockchain stage-ready">
+		         <p align="center">Please Donate To Bitcoin Address: <b>[[address]]</b></p>
+		         <p align="center" class="qr-code"></p>
+		    </div>
+		    <div class="blockchain stage-paid">
+		         Donation of <b>[[value]] BTC</b> Received. Thank You.
+		    </div>
+		    <div class="blockchain stage-error">
+		        <font color="red">[[error]]</font>
+		    </div>
+		</div>
+
+			<h1>Anakron.</h1>
+			<div id="console">
+				<p><em>Her instructions said <q>it's hidden in an obvious spot.</q> It's your job to find it.</em>
+
+				<p class="response">Welcome to Anakron. Start off by typing `look` to get a feel for your surroundings. Then, explore the world by typing commands like `kill zombie with sword`. You can chat with your fellow adventurers by prefixing with a slash (`/hey there, how are you?`). Some objects can be inspected with `inspect object`, others just need common sense and creativity to decipher. All commands are of the form `[verb] [object]`.
+
+				<p class="response">Work together to progress through the story.
+			</div>
+			<input type="text" id="stdin" autocapitalize="off" autocomplete="off"/>
+		</div>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-46120535-3', 'playanakron.com');
+		  ga('send', 'pageview');
+
+		</script>
+
+	</body>
+</html>

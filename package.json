@@ -1,0 +1,23 @@
+{
+  "name": "anakron-server",
+  "version": "0.0.0",
+  "description": "Anakron server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "anakron",
+    "server"
+  ],
+  "author": "Hardmath123, technoboy10",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~3.4.8",
+    "ws": "~0.4.31"
+  },
+  "engines": {
+    "node":"v0.10.25"
+  }
+}
